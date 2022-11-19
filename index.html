@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Library</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Simple Library</h1>
+
+            <!-- A button to open the popup form -->
+            <h2>Push <button class="open-button" onclick="openForm()">+</button> to add your books</h2>
+        </div>
+
+        <div id="book-container"></div>
+
+        <div id="new-book"></div>
+
+        <!-- The form -->
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+                <h1>Add book</h1>
+
+                <label for="title">Book:</label>
+                <input type="text" placeholder="Book" name="title" id="title">
+
+                <label for="author">Author:</label>
+                <input type="text" placeholder="Author" name="author" id="author">
+
+                <label for="pages">Pages:</label>
+                <input type="text" placeholder="Pages" name="pages" id="pages">
+
+                <label for="read">Read:</label>
+                <input type="checkbox" id='read' name='read' value='true'>
+
+                <button type="submit" class="addBtn" id="addBtn">Add</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">X</button>
+            </form>
+        </div>
+
+        <div id="book-container"></div>
+
+        <div id="new-book"></div>
+
+        </div>
+
+    </div>
+    <script src="script.js" defer></script>
+        
+</body>
+
+</html>
